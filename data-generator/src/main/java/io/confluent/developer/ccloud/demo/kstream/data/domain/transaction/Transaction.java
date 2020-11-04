@@ -4,20 +4,21 @@ import java.math.BigDecimal;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class Transaction {
 
   public enum Type {
     DEPOSIT, WITHDRAW
   }
 
-  private final String guid;
-  private final String account;
-  private final BigDecimal amount;
-  private final Type type;
-  private final String currency;
-  private final String country;
-  
+  String guid;
+  String account;
+  BigDecimal amount;
+  Type type;
+  String currency;
+  String country;
 }

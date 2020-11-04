@@ -1,0 +1,3 @@
+rootProject.name = 'event-streaming-workshop'
+include(':data-generator')
+include(':transactions-processor')
